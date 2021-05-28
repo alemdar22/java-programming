@@ -7,6 +7,25 @@ public class Address {
    private String zipCode;
    private String country="USA";
 
+   //consructor method
+   public Address(){ // no return type same as class name
+       System.out.println("Address constructor");
+       street = "123 unknown street";
+       city="Unknown";
+       state="Unknown";
+       zipCode="0000";
+
+
+
+   }
+   // second constructor: overloaded constructor
+    // in same statement :Address address1 = new Address(" .......")
+   public Address(String street,String city,String state,String zipCode){
+       this.street=street;
+       setStreet(street);//
+
+   }
+
     @Override
     public String toString() {
         return street+ " , "+city+" , "+state+" ,"+zipCode;
