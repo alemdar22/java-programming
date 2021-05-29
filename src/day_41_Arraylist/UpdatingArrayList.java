@@ -38,5 +38,17 @@ public class UpdatingArrayList {
         cars.set(fordIndex,"Traban");
         System.out.println(cars);
 
+        for (int i =0;i<cars.size();i++){
+            if(cars.get(i).equals("Renault")){
+                cars.set(i,"Anadol");
+                System.out.println(cars);
+            }else if(cars.get(i).equals("Fiat")){
+                cars.set(i,"Tata");
+                System.out.println(cars);
+            }else
+                System.out.println("aaa");
+
+            }
+        }
+
     }
-}

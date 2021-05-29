@@ -13,5 +13,7 @@ public class ArrayListExample {
 
         System.out.print(nums);
         nums.remove(1);// removes element at index 1
+      System.out.println();
+      System.out.println(nums);
     }
 }
